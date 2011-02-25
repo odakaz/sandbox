@@ -1,0 +1,92 @@
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 20:47:51) [GET]
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/test/foo]
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 20:51:47) [GET]
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/test/foo]
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 20:52:16) [GET]
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/test/foo]
+
+
+Processing ApplicationController#foo (for 127.0.0.1 at 2011-02-25 20:52:31) [GET]
+
+SyntaxError (/home/odakaz/development/rails/module_test/app/controllers/test_controller.rb:3: syntax error, unexpected tIVAR
+  AppendAction::@message = "foo!!!"
+                        ^):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (163.1ms)
+Rendered rescues/_request_and_response (23.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#foo (for 127.0.0.1 at 2011-02-25 20:53:13) [GET]
+
+SyntaxError (/home/odakaz/development/rails/module_test/app/controllers/test_controller.rb:3: syntax error, unexpected tCVAR
+  AppendAction::@@message = "foo!!!"
+                         ^):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (184.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 20:53:26) [GET]
+Completed in 14ms (View: 4, DB: 0) | 200 OK [http://localhost/test/foo]
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 20:53:45) [GET]
+Completed in 12ms (View: 1, DB: 0) | 200 OK [http://localhost/test/foo]
+
+
+Processing ApplicationController#foo (for 127.0.0.1 at 2011-02-25 20:57:37) [GET]
+
+SyntaxError (/home/odakaz/development/rails/module_test/lib/append_action.rb:3: syntax error, unexpected tCVAR
+    render(:text => AppendActionParams.@@message)
+                                                ^):
+  app/controllers/test_controller.rb:2
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendered rescues/_trace (192.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 21:03:19) [GET]
+Completed in 16ms (View: 7, DB: 0) | 200 OK [http://localhost/test/foo]
+
+
+Processing TestController#foo (for 127.0.0.1 at 2011-02-25 21:04:02) [GET]
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/test/foo]
